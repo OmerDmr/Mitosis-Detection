@@ -1,0 +1,10 @@
+ResimOrjinal = imread('2_5_2270.326357_505.765116.tif');
+hUnsharpFiltresi = fspecial('unsharp');
+unsharpFiltresi = imfilter(ResimOrjinal, hUnsharpFiltresi);
+figure;
+subplot(1,2,1);
+imshow(ResimOrjinal);
+title('Resmin Orjinal Hali');
+subplot(1,2,2);
+imshow(unsharpFiltresi);
+title('Unsharp Filtresi');
